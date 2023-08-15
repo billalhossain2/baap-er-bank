@@ -20,17 +20,29 @@
 </head>
 <body class="max-w-[1140px] mx-auto">
          <!-- header start  -->
-         <header class="mt-5">
-            <nav class="flex lg:flex-row md:flex-row flex-col items-center justify-between text-[#5074E4]">
-              <a href="../index.html"><p class="font-bold text-2xl">Baap Er Bank</p></a>
-                <ul class="flex lg:flex-row md:flex-row flex-col justify-center lg:gap-10 md:gap-5 gap-2 lg:mt-0 md:mt-0 mt-5 font-medium">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/about.html">About Us</a></li>
-                    <li class="font-bold"><a href="../pages/login.html">Login</a></li>
-                    <li><button class="bg-[#FE5988] px-6 py-1 text-white rounded-full"><a href="../pages/signup.html">Sign Up</a></button></li>
-                </ul>
-            </nav>
-        </header>
+         <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <a href="../index.html" class="btn btn-ghost normal-case font-bold text-2xl text-[#5074E4]">Baap Er Bank</a>
+          </div>
+          <div class="flex-none">
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img src="../img/deposit.png" />
+                </div>
+              </label>
+              <ul tabindex="0" class="text-[#5074E4] menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li>
+                  <a class="justify-between">
+                    Profile
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <!-- header end  -->
     <div class="cards-container mt-10">
         <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5">
@@ -41,7 +53,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-3xl">Deposit</h2>
-              <p class="font-bold">$350</p>
+              <p class="font-bold">$<span id="deposit-amount">350</span></p>
             </div>
         </div>
         <!-- card - 2 -->
@@ -51,7 +63,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-3xl">Withdraw</h2>
-              <p class="font-bold">$350</p>
+              <p class="font-bold">$<span id="withdraw-amount">150</span></p>
             </div>
         </div>
         <!-- card - 3 -->
@@ -61,7 +73,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-3xl">Balance</h2>
-              <p class="font-bold">$1250</p>
+              <p class="font-bold">$<span id="total-amount">1250</span></p>
             </div>
         </div>
         </div>
@@ -69,16 +81,18 @@
     <div class="input-bank-container grid lg:grid-cols-2 md:grid-cols-2 justify-center gap-5 mt-5 mb-10">
         <div class="bg-orange-300 p-6 rounded-lg w-[100%]">
             <h1 class="font-bold text-3xl">Please Deposit</h1>
-            <input type="number" placeholder="$ amount you want to deposit" class="input input-bordered input-primary w-full max-w-xs mt-2" />
+            <input id="deposit-field" type="number" placeholder="$ amount you want to deposit" class="input input-bordered input-primary w-full max-w-xs mt-2" />
             <br>
-            <button class="btn btn-primary mt-2 bg-orange-600 hover:bg-orange-600">Deposit</button>
+            <button id="deposit-btn" class="btn btn-primary mt-2 bg-orange-600 hover:bg-orange-600">Deposit</button>
         </div>
         <div class="bg-orange-300 p-5 rounded-lg">
             <h1 class="font-bold text-3xl">Please Withdraw</h1>
-            <input type="number" placeholder="$ amount you want to withdraw" class="input input-bordered input-primary w-full max-w-xs mt-2" />
+            <input id="withdraw-field" type="number" placeholder="$ amount you want to withdraw" class="input input-bordered input-primary w-full max-w-xs mt-2" />
             <br>
-            <button class="btn btn-primary mt-2 bg-green-600 hover:bg-green-600">Withdraw</button>
+            <button id="withdraw-btn" class="btn btn-primary mt-2 bg-green-600 hover:bg-green-600">Withdraw</button>
         </div>
     </div>
+    <script src="../js/utilities.js"></script>
+    <script src="../js/bank.js"></script>
 </body>
 </html>
