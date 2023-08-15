@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Baap Er Bank</title>
-</head>
-<body>
-    
-</body>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisyUi  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/bank.css" />
+  </head>
+  <body class="lg:max-w-[90%] mx-auto">
+    <header class="mt-5">
+      <nav
+        class="flex lg:flex-row md:flex-row flex-col items-center justify-between text-[#5074E4]"
+      >
+        <p class="font-bold text-2xl">Baap Er Bank</p>
+        <ul
+          class="flex lg:flex-row md:flex-row flex-col justify-center lg:gap-10 md:gap-5 gap-2 lg:mt-0 md:mt-0 mt-5 font-medium"
+        >
+          <li><a href="">Home</a></li>
+          <li><a href="./pages/about.html">About Us</a></li>
+          <li class="font-bold"><a href="./pages/login.html">Login</a></li>
+          <li>
+            <button class="bg-[#FE5988] px-6 py-1 text-white rounded-full">
+              <a href="./pages/signup.html">Sign Up</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!-- banner  -->
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse lg:gap-40 gap-10">
+          <img src="./img/bank-home.png" class="w-auto" />
+          <div>
+            <h1 class="text-5xl font-bold m-5 text-[#5074E4]">Banking</h1>
+
+            <button class="btn btn-primary bg-[#FE5988] hover:bg-[#FE5988]">
+              Get Started
+            </button>
+            <button class="btn btn-primary bg-black hover:bg-black text-white">
+              Try Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

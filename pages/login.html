@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+     <!-- daisyUi  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+     <!-- tailwind css  -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- custom css  -->
+     <link rel="stylesheet" href="css/bank.css">
+</head>
+<body class="lg:max-w-[90%] mx-auto">
+    <!-- header start  -->
+    <header class="mt-5">
+        <nav class="flex lg:flex-row md:flex-row flex-col items-center justify-between text-[#5074E4]">
+          <a href="../index.html"><p class="font-bold text-2xl">Baap Er Bank</p></a>
+            <ul class="flex lg:flex-row md:flex-row flex-col justify-center lg:gap-10 md:gap-5 gap-2 lg:mt-0 md:mt-0 mt-5 font-medium">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
+                <li class="font-bold"><a href="../pages/login.html">Login</a></li>
+                <li><button class="bg-[#FE5988] px-6 py-1 text-white rounded-full"><a href="../pages/signup.html">Sign Up</a></button></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header end  -->
+    <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl font-bold">Login now!</h1>
+            <p class="py-6">Welcome to the secure login page of Baap Er Bank. Access your financial world with confidence and convenience. Our user-friendly interface ensures a seamless experience as you manage your accounts, check your balances, make transactions, and safeguard your assets. Rest assured, your privacy is our priority – employing advanced encryption to keep your sensitive information protected. Your journey to financial control begins here. Please enter your credentials to securely access your account. Thank you for choosing [Your Bank Name] for all your banking needs.</p>
+          </div>
+          <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                <input type="text" name="email" placeholder="email" class="input input-bordered" />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Password</span>
+                </label>
+                <input type="text" placeholder="password" name="password" class="input input-bordered" />
+                <label class="label">
+                  <a href="../pages/changePwd.html" class="label-text-alt link link-hover">Forgot password?</a>
+                </label>
+              </div>
+              <div class="form-control mt-6">
+                <a href="../pages/bank.html"><button class="btn btn-primary w-[100%]">Login</button></a>
+              </div>
+              <div>
+                <p class="mt-2">Are you new to this site? <a class="underline font-semibold" href="../pages/signup.html"> Register </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

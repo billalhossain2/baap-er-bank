@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+     <!-- daisyUi  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+     <!-- tailwind css  -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- custom css  -->
+     <link rel="stylesheet" href="css/bank.css">
+</head>
+<body class="lg:max-w-[90%] mx-auto">
+     <!-- header start  -->
+     <header class="mt-5">
+        <nav class="flex lg:flex-row md:flex-row flex-col items-center justify-between text-[#5074E4]">
+          <a href="../index.html"><p class="font-bold text-2xl">Baap Er Bank</p></a>
+            <ul class="flex lg:flex-row md:flex-row flex-col justify-center lg:gap-10 md:gap-5 gap-2 lg:mt-0 md:mt-0 mt-5 font-medium">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About Us</a></li>
+                <li class="font-bold"><a href="../pages/login.html">Login</a></li>
+                <li><button class="bg-[#FE5988] px-6 py-1 text-white rounded-full"><a href="../pages/signup.html">Sign Up</a></button></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header end  -->
+    <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl font-bold">Signup now!</h1>
+            <p class="py-6">"Welcome to Baap Er Bank Online Sign-Up! Join our secure and convenient banking platform today. Experience hassle-free account creation in just a few easy steps. Unlock a world of financial possibilities, from managing your funds to accessing innovative digital banking services. Your financial journey starts here. Sign up now to enjoy seamless online banking with [Bank Name]."</p>
+          </div>
+          <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div class="card-body">
+            <form action="">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">User name</span>
+                </label>
+                <input type="text" name="name" placeholder="user name" class="input input-bordered" />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                <input type="email" name="email" placeholder="email" class="input input-bordered" />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Password</span>
+                </label>
+                <input type="password" name="password" placeholder="password" class="input input-bordered" />
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn btn-primary">Signup</button>
+              </div>
+              <div>
+                <p class="mt-2">Have you already an account? <a class="underline font-semibold" href="../pages/login.html"> Login </a></p>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

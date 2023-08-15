@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+     <!-- daisyUi  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+     <!-- tailwind css  -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- custom css  -->
+     <link rel="stylesheet" href="css/bank.css">
+</head>
+<body class="max-w-[1140px] mx-auto">
+         <!-- header start  -->
+         <header class="mt-5">
+            <nav class="flex lg:flex-row md:flex-row flex-col items-center justify-between text-[#5074E4]">
+              <a href="../index.html"><p class="font-bold text-2xl">Baap Er Bank</p></a>
+                <ul class="flex lg:flex-row md:flex-row flex-col justify-center lg:gap-10 md:gap-5 gap-2 lg:mt-0 md:mt-0 mt-5 font-medium">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About Us</a></li>
+                    <li class="font-bold"><a href="../pages/login.html">Login</a></li>
+                    <li><button class="bg-[#FE5988] px-6 py-1 text-white rounded-full"><a href="../pages/signup.html">Sign Up</a></button></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header end  -->
+    <div class="cards-container mt-10">
+        <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5">
+            <!-- card - 1 -->
+        <div class="card bg-orange-400 text-white text-3xl">
+            <figure class="px-10 pt-10">
+              <img class="max-w-[150px]" src="../img/deposit.png" alt="Shoes"/>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-3xl">Deposit</h2>
+              <p class="font-bold">$350</p>
+            </div>
+        </div>
+        <!-- card - 2 -->
+        <div class="card bg-green-400 text-white text-3xl">
+            <figure class="px-10 pt-10">
+              <img class="max-w-[150px]" src="../img/withdraw.png" alt="Shoes"/>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-3xl">Withdraw</h2>
+              <p class="font-bold">$350</p>
+            </div>
+        </div>
+        <!-- card - 3 -->
+        <div class="card bg-lime-400 text-white text-3xl">
+            <figure class="px-10 pt-10">
+              <img class="max-w-[150px]" src="../img/total.png" alt="Shoes"/>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-3xl">Balance</h2>
+              <p class="font-bold">$350</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="input-bank-container grid lg:grid-cols-2 md:grid-cols-2 justify-center gap-5 mt-5 mb-10">
+        <div class="bg-orange-300 p-6 rounded-lg w-[100%]">
+            <h1 class="font-bold text-3xl">Please Deposit</h1>
+            <input type="number" placeholder="$ amount you want to deposit" class="input input-bordered input-primary w-full max-w-xs mt-2" />
+            <br>
+            <button class="btn btn-primary mt-2">Deposit</button>
+        </div>
+        <div class="bg-orange-300 p-5 rounded-lg">
+            <h1 class="font-bold text-3xl">Please Withdraw</h1>
+            <input type="number" placeholder="$ amount you want to withdraw" class="input input-bordered input-primary w-full max-w-xs mt-2" />
+            <br>
+            <button class="btn btn-primary mt-2">Withdraw</button>
+        </div>
+    </div>
+</body>
+</html>
