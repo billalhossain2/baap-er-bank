@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Banking Settings</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+<div class="container mx-auto p-6">
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden">
+    <div class="p-4">
+      <h1 class="text-2xl font-semibold mb-4">Account Settings</h1>
+      
+      <form class="space-y-4">
+        <div class="flex flex-col">
+          <label for="full-name" class="text-gray-600">Full Name</label>
+          <input type="text" id="full-name" class="border border-gray-300 px-3 py-2 rounded-md focus:ring focus:ring-blue-200">
+        </div>
+        
+        <div class="flex flex-col">
+          <label for="email" class="text-gray-600">Email Address</label>
+          <input type="email" id="email" class="border border-gray-300 px-3 py-2 rounded-md focus:ring focus:ring-blue-200">
+        </div>
+        
+        <div class="flex flex-col">
+          <label for="new-password" class="text-gray-600">New Password</label>
+          <input type="password" id="new-password" class="border border-gray-300 px-3 py-2 rounded-md focus:ring focus:ring-blue-200">
+        </div>
+        
+        <div class="flex justify-between items-center">
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Save Changes</button>
+          <button type="button" class="text-red-500 hover:text-red-700">Delete Account</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="mt-6 bg-white shadow-md rounded-lg overflow-hidden">
+    <div class="p-4">
+      <h1 class="text-2xl font-semibold mb-4">Security Settings</h1>
+      
+      <form class="space-y-4">
+        <div class="flex flex-col">
+          <label for="current-password" class="text-gray-600">Current Password</label>
+          <input type="password" id="current-password" class="border border-gray-300 px-3 py-2 rounded-md focus:ring focus:ring-blue-200">
+        </div>
+        
+        <div class="flex flex-col">
+          <label for="new-security-question" class="text-gray-600">New Security Question</label>
+          <input type="text" id="new-security-question" class="border border-gray-300 px-3 py-2 rounded-md focus:ring focus:ring-blue-200">
+        </div>
+        
+        <div class="flex flex-col">
+          <label for="new-security-answer" class="text-gray-600">New Security Answer</label>
+          <input type="password" id="new-security-answer" class="border border-gray-300 px-3 py-2 rounded-md focus:ring focus:ring-blue-200">
+        </div>
+        
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="mt-6 bg-white shadow-md rounded-lg overflow-hidden">
+    <div class="p-4">
+      <h1 class="text-2xl font-semibold mb-4">Notification Preferences</h1>
+      
+      <form class="space-y-4">
+        <div class="flex items-center">
+          <input type="checkbox" id="email-notifications" class="mr-2">
+          <label for="email-notifications" class="text-gray-600">Receive email notifications</label>
+        </div>
+        
+        <div class="flex items-center">
+          <input type="checkbox" id="sms-notifications" class="mr-2">
+          <label for="sms-notifications" class="text-gray-600">Receive SMS notifications</label>
+        </div>
+        
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Save Changes</button>
+      </form>
+    </div>
+  </div>
+ <!-- Go Back Button -->
+ <div class="mt-6">
+    <a href="../pages/bank.html" class="text-blue-500 hover:underline">Go Back</a>
+  </div>
+</div>
+
+</body>
+</html>
